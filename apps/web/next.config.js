@@ -8,6 +8,7 @@ const nextConfig = {
   reactStrictMode: true,
   staticPageGenerationTimeout: 1000,
   images: {
+    unoptimized: true,
     remotePatterns: [
       // For profile pictures (Google OAuth)
       { hostname: "*.googleusercontent.com" },
