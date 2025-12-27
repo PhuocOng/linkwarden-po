@@ -3,6 +3,7 @@ const { version } = require("./package.json");
 const { i18n } = require("./next-i18next.config");
 
 const nextConfig = {
+  basePath: "/linkwarden",
   i18n,
   reactStrictMode: true,
   staticPageGenerationTimeout: 1000,
@@ -10,6 +11,17 @@ const nextConfig = {
     remotePatterns: [
       // For profile pictures (Google OAuth)
       { hostname: "*.googleusercontent.com" },
+      // Allow images from pomentorship.com domain
+      { 
+        protocol: 'https',
+        hostname: 'pomentorship.com',
+        pathname: '/linkwarden/**',
+      },
+      { 
+        protocol: 'http',
+        hostname: 'pomentorship.com',
+        pathname: '/linkwarden/**',
+      },
     ],
 
     minimumCacheTTL: 10,
