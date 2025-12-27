@@ -94,7 +94,7 @@ export default function Sidebar({
             />
           ) : user?.theme === "light" ? (
             <Image
-              src={"/linkwarden_light.png"}
+              src={"/linkwarden/linkwarden_light.png"}
               width={640}
               height={136}
               alt="Linkwarden"
@@ -104,7 +104,7 @@ export default function Sidebar({
             />
           ) : (
             <Image
-              src={"/linkwarden_dark.png"}
+              src={"/linkwarden/linkwarden_dark.png"}
               width={640}
               height={136}
               alt="Linkwarden"
